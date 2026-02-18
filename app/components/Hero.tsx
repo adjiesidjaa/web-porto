@@ -9,7 +9,13 @@ export function Hero() {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
+        transition={{
+          y: { duration: 0.5, ease: (t: number) => Math.floor(t * 6) / 6 },
+          opacity: {
+            duration: 0.4,
+            ease: (t: number) => Math.floor(t * 5) / 5,
+          },
+        }}
         className="flex flex-col items-start"
       >
         <div className="mb-8">

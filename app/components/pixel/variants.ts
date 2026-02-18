@@ -33,9 +33,9 @@ export const inventoryReveal: Variants = {
     scale: 1,
     filter: "blur(0px)",
     transition: {
-      scale: { type: "spring", stiffness: 320, damping: 20, mass: 0.5 },
-      opacity: { duration: 0.3 },
-      filter: { duration: 0.4 },
+      scale: { duration: 0.5, ease: stepsEase(8) },
+      opacity: { duration: 0.4, ease: stepsEase(6) },
+      filter: { duration: 0.4, ease: stepsEase(4) },
     },
   },
 };
@@ -50,7 +50,10 @@ export const descItem: Variants = {
   visible: {
     opacity: 1,
     x: 0,
-    transition: { duration: 0.25 },
+    transition: {
+      x: { duration: 0.25, ease: stepsEase(4) },
+      opacity: { duration: 0.2, ease: stepsEase(3) },
+    },
   },
 };
 
@@ -65,6 +68,10 @@ export const tagPop: Variants = {
     opacity: 1,
     scale: 1,
     y: 0,
-    transition: { type: "spring", stiffness: 500, damping: 18 },
+    transition: {
+      scale: { duration: 0.3, ease: stepsEase(5) },
+      opacity: { duration: 0.2, ease: stepsEase(3) },
+      y: { duration: 0.25, ease: stepsEase(4) },
+    },
   },
 };

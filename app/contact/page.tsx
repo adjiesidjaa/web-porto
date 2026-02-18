@@ -8,7 +8,7 @@ import {
   PixelCorners,
   PixelDividerH,
 } from "../components/pixel/PixelUI";
-import { inventoryReveal } from "../components/pixel/variants";
+import { inventoryReveal, stepsEase } from "../components/pixel/variants";
 
 type FormStatus = "idle" | "sending" | "success" | "error";
 
@@ -141,6 +141,10 @@ export default function Page() {
                 <motion.span
                   initial={{ opacity: 0, x: -10 }}
                   animate={{ opacity: 1, x: 0 }}
+                  transition={{
+                    x: { duration: 0.3, ease: stepsEase(4) },
+                    opacity: { duration: 0.25, ease: stepsEase(3) },
+                  }}
                   className="text-[8px] font-['Press_Start_2P'] text-green-500 uppercase"
                 >
                   ✓ Message sent successfully!
@@ -150,6 +154,10 @@ export default function Page() {
                 <motion.span
                   initial={{ opacity: 0, x: -10 }}
                   animate={{ opacity: 1, x: 0 }}
+                  transition={{
+                    x: { duration: 0.3, ease: stepsEase(4) },
+                    opacity: { duration: 0.25, ease: stepsEase(3) },
+                  }}
                   className="text-[8px] font-['Press_Start_2P'] text-red-500 uppercase"
                 >
                   ✗ Something went wrong. Try again.
@@ -165,20 +173,23 @@ export default function Page() {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.3 }}
+        transition={{
+          y: { duration: 0.4, ease: stepsEase(6), delay: 0.3 },
+          opacity: { duration: 0.35, ease: stepsEase(5), delay: 0.3 },
+        }}
         className="mt-12 grid grid-cols-2 gap-4"
       >
         <a
-          href="https://instagram.com/adjiesidjaa"
+          href="https://linkedin.com/in/adjiesidjaa"
           target="_blank"
           rel="noopener noreferrer"
           className="group/social relative p-4 border-4 border-[#8b7355] hover:border-[#c5a686] transition-colors bg-white dark:bg-[#232020]"
         >
           <span className="text-[8px] font-['Press_Start_2P'] text-[#c5a686] block mb-2">
-            INSTAGRAM
+            LINKEDIN
           </span>
           <span className="text-[10px] font-['Press_Start_2P'] text-[#232020] dark:text-white group-hover/social:text-[#c5a686] transition-colors">
-            @ADJIESIDJAA
+            ADJIESIDJAA
           </span>
         </a>
         <a
