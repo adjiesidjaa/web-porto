@@ -169,16 +169,16 @@ export default function Page() {
         className="mt-12 grid grid-cols-2 gap-4"
       >
         <a
-          href="https://twitter.com/foxyezy"
+          href="https://instagram.com/adjiesidjaa"
           target="_blank"
           rel="noopener noreferrer"
           className="group/social relative p-4 border-4 border-[#8b7355] hover:border-[#c5a686] transition-colors bg-white dark:bg-[#232020]"
         >
           <span className="text-[8px] font-['Press_Start_2P'] text-[#c5a686] block mb-2">
-            TWITTER
+            INSTAGRAM
           </span>
           <span className="text-[10px] font-['Press_Start_2P'] text-[#232020] dark:text-white group-hover/social:text-[#c5a686] transition-colors">
-            @FOXYEZY
+            @ADJIESIDJAA
           </span>
         </a>
         <a

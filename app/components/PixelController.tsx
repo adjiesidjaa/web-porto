@@ -8,7 +8,6 @@ import { Mail, Twitter, Instagram, Github, Linkedin } from "lucide-react";
 export function PixelController() {
   const socialIcons = [
     { icon: <Mail size={16} />, href: "mailto:adjiesidja20@gmail.com" },
-    { icon: <Twitter size={16} />, href: "https://x.com/foxyezy" },
     {
       icon: <Instagram size={16} />,
       href: "https://instagram.com/adjiesidjaa",
