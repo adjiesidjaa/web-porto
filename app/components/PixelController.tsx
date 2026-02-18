@@ -7,11 +7,17 @@ import { Mail, Twitter, Instagram, Github, Linkedin } from "lucide-react";
 
 export function PixelController() {
   const socialIcons = [
-    { icon: <Mail size={16} />, href: "mailto:hello@example.com" },
-    { icon: <Twitter size={16} />, href: "#" },
-    { icon: <Instagram size={16} />, href: "#" },
-    { icon: <Github size={16} />, href: "#" },
-    { icon: <Linkedin size={16} />, href: "#" },
+    { icon: <Mail size={16} />, href: "mailto:adjiesidja20@gmail.com" },
+    { icon: <Twitter size={16} />, href: "https://x.com/foxyezy" },
+    {
+      icon: <Instagram size={16} />,
+      href: "https://instagram.com/adjiesidjaa",
+    },
+    { icon: <Github size={16} />, href: "https://github.com/adjiesidjaa" },
+    {
+      icon: <Linkedin size={16} />,
+      href: "https://linkedin.com/in/adjiesidjaa",
+    },
   ];
 
   const gridItems = [
@@ -74,6 +80,8 @@ export function PixelController() {
           <a
             key={idx}
             href={social.href}
+            target={social.href.startsWith("mailto:") ? undefined : "_blank"}
+            rel="noopener noreferrer"
             className="w-11 h-11 bg-white text-[#232020] flex items-center justify-center hover:bg-[#c5a686] transition-all shadow-[0_3px_0px_rgba(0,0,0,0.2)]"
           >
             {social.icon}
