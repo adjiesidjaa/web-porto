@@ -92,24 +92,45 @@ function ExperienceCard({ exp, idx }: { exp: ExperienceItem; idx: number }) {
 export default function Page() {
   const experienceData: ExperienceItem[] = [
     {
+      organization: "Terang AI",
+      date: "April 2026 - Current",
+      role: "Full Stack Engineer Intern",
+      descriptions: [
+        'Architected and engineered "Terang AI," an intelligent event management ecosystem, from scratch using Go (Golang) for high-performance microservices and Next.js/React for a seamless, responsive user interface.',
+        "Integrated automation features, including smart scheduling and automated task allocation, to optimize event coordination workflows and reduce manual administrative overhead by 70%.",
+        "Developed a robust backend architecture with a focus on high concurrency and data integrity, implementing RESTful APIs and optimized database schemas to support real-time updates for large-scale events.",
+        "Streamlined the deployment pipeline using industry-standard DevOps practices, ensuring the platform's scalability and high availability for diverse organizational needs.",
+      ],
+    },
+    {
       organization: "BEM Fasilkom UI",
-      date: "July 2025 - Present",
+      date: "July 2025 - April 2026",
       role: "Head of Business & Partnership Bureau",
       descriptions: [
         "Spearheaded strategic collaborations with external corporate partners to facilitate institutional growth and secure sponsorships for faculty-wide initiatives.",
         "Managed the end-to-end refactoring and deployment of the PEMIRA FISIP UI election system, ensuring high availability and stability during critical voting periods.",
-        'Developed a comprehensive "Tryout" feature for the Jitu Academy platform using Express.js and Next.js, integrating automated scoring and real-time user progress tracking.',
+        'Developed a comprehensive "Tryout" feature for the Jitu Academy platform from scratch using Nest.js and Next.js, integrating automated scoring and real-time user progress tracking.',
       ],
     },
     {
       organization: "RISTEK Fasilkom UI",
-      date: "Mar 2025 - Present",
+      date: "Mar 2025 - April 2026",
       role: "People Operations of Web Development",
       descriptions: [
         'Orchestrated "Coffee Chat" initiatives to facilitate knowledge transfer, connecting active RISTEK members with distinguished alumni at top-tier tech firms for career mentorship.',
         "Curated a centralized repository of learning resources, enabling members to access recorded sessions and study materials asynchronously.",
         'Developed and executed a quarterly performance evaluation system for all division members, utilizing "report cards" to assess soft skill competencies and foster continuous personal growth.',
         "Managed end-to-end relations with guest speakers for technical workshops, specifically bridging current members with distinguished alumni at leading tech firms to share industry insights and best practices.",
+      ],
+    },
+    {
+      organization: "PERAK Fasilkom UI",
+      date: "Feb 2025 - Sept 2025",
+      role: "Staff of Festival",
+      descriptions: [
+        "Served as the Person in Charge (PIC) for the festival's main event, orchestrating end-to-end operations and ensuring a seamless experience for 300+ attendees.",
+        "Liaised with external amusement and equipment vendors to secure event attractions, managing the negotiation, procurement, and logistical coordination of rented assets.",
+        "Managed communications between the committee and external parties to streamline event logistics and resolve on-site operational challenges.",
       ],
     },
     {
@@ -130,16 +151,6 @@ export default function Page() {
         "Served as the primary point of contact for high school participants, ensuring seamless communication and delivering a high-quality guest experience throughout the event.",
         "Acted as the primary point of communication between the organizing committee and external participants, resolving high-pressure logistical bottlenecks and onsite inquiries.",
         "Led and supervised a team of mentors, providing comprehensive briefings and technical guidance on event protocols to ensure seamless execution.",
-      ],
-    },
-    {
-      organization: "PERAK Fasilkom UI",
-      date: "Feb 2025 - Sept 2025",
-      role: "Staff of Festival",
-      descriptions: [
-        "Served as the Person in Charge (PIC) for the festival's main event, orchestrating end-to-end operations and ensuring a seamless experience for 300+ attendees.",
-        "Liaised with external amusement and equipment vendors to secure event attractions, managing the negotiation, procurement, and logistical coordination of rented assets.",
-        "Managed communications between the committee and external parties to streamline event logistics and resolve on-site operational challenges.",
       ],
     },
   ];

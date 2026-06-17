@@ -209,6 +209,22 @@ function ProjectCard({ project, idx }: { project: Project; idx: number }) {
 export default function Page() {
   const projects: Project[] = [
     {
+      img: "/projects/events-terang.png",
+      title: "Terang Events",
+      desc: "An end-to-end Educational Event Platform (SaaS) built as a monorepo. Features a Go (Gin) microservices backend deployed on Kubernetes (GKE), and a cross-platform frontend using Solito (Next.js 15 + Expo). Leverages GCP services for scalable storage, monitoring, and automated workflows.",
+      tags: ["KUBERNETES", "GCP", "GO", "GIN", "NEXTJS", "SOLITO", "POSTGRESQL"],
+      year: "2026",
+      type: "web",
+    },
+    {
+      img: "/projects/tiketbisa.png",
+      title: "TiketBisa",
+      desc: "A high-concurrency event ticketing marketplace. Features a modern frontend with real-time seat mapping and a robust Java backend architected with micro-services patterns, utilizing RabbitMQ for message queuing, Redis for caching, and AWS S3 for storage.",
+      tags: ["REACT ROUTER", "JAVA", "SPARK", "POSTGRESQL", "RABBITMQ", "REDIS"],
+      year: "2025",
+      type: "web",
+    },
+    {
       img: "/projects/pemira.jpeg",
       title: "Pemira FISIP UI 2025",
       desc: "Built and maintained the E-Voting platform for FISIP Universitas Indonesia, refining features from the prior system, optimizing scalability to handle higher voting traffic, and deploying a production-grade server infrastructure on Railway.",
