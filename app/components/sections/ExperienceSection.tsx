@@ -227,7 +227,7 @@ export function ExperienceSection() {
 
   let boundaryStatus = "SCROLL INSIDE FOR CONTINUOUS VIEW";
   if (isAtBottom) {
-    boundaryStatus = "END OF TIMELINE • SCROLL DOWN FOR PROJECTS ➔";
+    boundaryStatus = "END OF TIMELINE • SCROLL DOWN FOR PROJECTS ->";
   } else if (isAtTop) {
     boundaryStatus = "TOP OF TIMELINE • SCROLL DOWN TO EXPLORE";
   }

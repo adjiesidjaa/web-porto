@@ -2,7 +2,7 @@
 
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { ExternalLink, Code2, Sparkles } from "lucide-react";
+import { ExternalLink, Code2, Sparkles, ArrowUpRight } from "lucide-react";
 import { PageHeading, AmbientPixelDecors } from "../pixel/PixelUI";
 import { TechIcon } from "../pixel/TechIcon";
 import { inventoryReveal } from "../pixel/variants";
@@ -110,8 +110,9 @@ function FeaturedProjectCard({ project }: { project: Project }) {
             </div>
 
             {/* Title */}
-            <h3 className="text-lg md:text-2xl font-pixel text-[#180d2b] dark:text-white group-hover:text-[#7c3aed] dark:group-hover:text-[#00f0ff] transition-colors uppercase tracking-tight">
-              ▶ {project.title}
+            <h3 className="text-lg md:text-2xl font-pixel text-[#180d2b] dark:text-white group-hover:text-[#7c3aed] dark:group-hover:text-[#00f0ff] transition-colors uppercase tracking-tight flex items-center gap-2">
+              <span className="text-[#7c3aed] dark:text-[#00f0ff] shrink-0">▸</span>
+              <span>{project.title}</span>
             </h3>
 
             {/* Concise Description */}
@@ -171,7 +172,8 @@ function FeaturedProjectCard({ project }: { project: Project }) {
                   className="inline-flex items-center gap-2 px-4 py-2 text-xs md:text-sm font-mono font-bold bg-[#7c3aed] text-white dark:bg-[#00f0ff] dark:text-[#0e1118] border-2 border-[#180d2b] dark:border-[#00f0ff] shadow-[3px_3px_0px_#180d2b] dark:shadow-[3px_3px_0px_#ff007f] hover:translate-y-[-2px] hover:shadow-[5px_5px_0px_#ec4899] dark:hover:shadow-[5px_5px_0px_#00f0ff] active:translate-y-0 transition-all cursor-pointer select-none"
                 >
                   <ExternalLink className="w-4 h-4 shrink-0" />
-                  <span>LIVE DEMO ↗</span>
+                  <span>LIVE DEMO</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 shrink-0" />
                 </a>
               )}
             </div>
@@ -273,8 +275,9 @@ function StandardBentoCard({ project }: { project: Project }) {
         {/* Card Content & Action Bar (Always Visible - No Empty Feeling) */}
         <div className="p-5 md:p-6 flex flex-col flex-1 justify-between gap-4 bg-white dark:bg-[#151922]">
           <div>
-            <h4 className="text-xs md:text-sm font-pixel text-[#180d2b] dark:text-white group-hover:text-[#7c3aed] dark:group-hover:text-[#00f0ff] transition-colors uppercase tracking-tight">
-              ▶ {project.title}
+            <h4 className="text-xs md:text-sm font-pixel text-[#180d2b] dark:text-white group-hover:text-[#7c3aed] dark:group-hover:text-[#00f0ff] transition-colors uppercase tracking-tight flex items-center gap-1.5">
+              <span className="text-[#7c3aed] dark:text-[#00f0ff] shrink-0">▸</span>
+              <span>{project.title}</span>
             </h4>
 
             <p className="text-xs md:text-sm font-sans text-zinc-700 dark:text-zinc-200 leading-relaxed mt-2">
@@ -310,7 +313,8 @@ function StandardBentoCard({ project }: { project: Project }) {
                   className="inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-mono font-semibold bg-[#7c3aed] text-white dark:bg-[#00f0ff] dark:text-[#0e1118] border-2 border-[#180d2b] dark:border-[#00f0ff] shadow-[2px_2px_0px_#180d2b] dark:shadow-[2px_2px_0px_#ff007f] hover:translate-y-[-2px] hover:shadow-[4px_4px_0px_#ec4899] dark:hover:shadow-[4px_4px_0px_#00f0ff] active:translate-y-0 transition-all cursor-pointer select-none"
                 >
                   <ExternalLink className="w-3.5 h-3.5 shrink-0" />
-                  <span>LIVE DEMO ↗</span>
+                  <span>LIVE DEMO</span>
+                  <ArrowUpRight className="w-3 h-3 shrink-0" />
                 </a>
               )}
 
@@ -322,7 +326,8 @@ function StandardBentoCard({ project }: { project: Project }) {
                   className="inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-mono font-semibold bg-white dark:bg-[#151922] text-[#180d2b] dark:text-white border-2 border-[#180d2b] dark:border-[#2a324b] shadow-[2px_2px_0px_#180d2b] dark:shadow-[2px_2px_0px_#00f0ff] hover:border-[#7c3aed] dark:hover:border-[#00f0ff] hover:text-[#7c3aed] dark:hover:text-[#00f0ff] hover:translate-y-[-2px] active:translate-y-0 transition-all cursor-pointer select-none"
                 >
                   <Code2 className="w-3.5 h-3.5 shrink-0" />
-                  <span>VIEW CODE ↗</span>
+                  <span>VIEW CODE</span>
+                  <ArrowUpRight className="w-3 h-3 shrink-0" />
                 </a>
               )}
 
