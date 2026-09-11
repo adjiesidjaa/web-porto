@@ -1,34 +1,83 @@
 import React from "react";
 import { Hero } from "./components/Hero";
 import { PixelController } from "./components/PixelController";
+import { ExperienceSection } from "./components/sections/ExperienceSection";
+import { ProjectsSection } from "./components/sections/ProjectsSection";
+import { ContactSection } from "./components/sections/ContactSection";
+import { BackToTop } from "./components/BackToTop";
+import { PixelDividerH } from "./components/pixel/PixelUI";
 
 export default function Page() {
   return (
-    <main className="pt-16 md:pt-24">
-      <div className="flex justify-center pb-8 md:pb-16">
-        <div className="p-1 border-4 border-[#8b7355] bg-[#c5a686]">
-          <h2 className="text-[#232020] text-[10px] font-['Press_Start_2P'] p-2">
-            Hello all!
-          </h2>
-        </div>
-      </div>
-
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-2 items-center justify-center px-8 md:px-12">
-        <div className="flex items-center justify-center h-full w-full">
-          <div className="w-full max-w-sm md:max-w-md h-full p-1 border-4 border-[#8b7355] bg-[#c5a686]">
-            <img
-              src="/adjie-photos.png"
-              alt="Avatar"
-              className="w-full h-full object-cover"
-            />
+    <div className="relative">
+      {/* Section: About / Hero */}
+      <section
+        id="about"
+        className="w-full px-6 md:px-12 pt-20 md:pt-28 pb-16 md:pb-24 scroll-mt-24"
+      >
+        <div className="flex justify-center pb-8 md:pb-12">
+          <div className="p-1 border-4 border-[#180d2b] dark:border-[#00f0ff] bg-[#7c3aed] dark:bg-[#00f0ff] shadow-[4px_4px_0px_#ec4899] dark:shadow-[4px_4px_0px_#ff007f]">
+            <h2 className="text-white dark:text-[#0e1118] text-[10px] font-['Press_Start_2P'] p-2 font-bold uppercase tracking-wider">
+              Hello all!
+            </h2>
           </div>
         </div>
 
-        <div className="flex flex-col gap-8">
-          <Hero />
-          <PixelController />
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-4 items-center justify-center">
+          <div className="flex items-center justify-center w-full">
+            <div className="w-full max-w-sm md:max-w-md p-1 border-4 border-[#180d2b] dark:border-[#00f0ff] bg-[#ec4899] dark:bg-[#ff007f] shadow-[6px_6px_0px_#7c3aed] dark:shadow-[6px_6px_0px_#ff007f]">
+              <img
+                src="/adjie-photos.png"
+                alt="Adjie M. Usman"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-8">
+            <Hero />
+            <PixelController />
+          </div>
+        </div>
+
+        {/* Retro Scroll Indicator */}
+        <div className="flex justify-center mt-12 md:mt-16">
+          <a
+            href="#experience"
+            className="flex flex-col items-center gap-2 text-[8px] font-['Press_Start_2P'] text-[#7c3aed] dark:text-[#00f0ff] hover:text-[#ec4899] dark:hover:text-[#ff007f] transition-colors cursor-pointer"
+          >
+            <span>[ SCROLL DOWN ]</span>
+            <span className="text-[10px] animate-bounce">▼</span>
+          </a>
         </div>
       </section>
-    </main>
+
+      {/* Divider */}
+      <div className="w-full px-6 md:px-12">
+        <PixelDividerH />
+      </div>
+
+      {/* Section: Experience */}
+      <ExperienceSection />
+
+      {/* Divider */}
+      <div className="w-full px-6 md:px-12">
+        <PixelDividerH />
+      </div>
+
+      {/* Section: Projects */}
+      <ProjectsSection />
+
+      {/* Divider */}
+      <div className="w-full px-6 md:px-12">
+        <PixelDividerH />
+      </div>
+
+      {/* Section: Contact */}
+      <ContactSection />
+
+      {/* Floating Back to Top Button */}
+      <BackToTop />
+    </div>
   );
 }

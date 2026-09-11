@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased font-sans selection:bg-[#c5a686] selection:text-white`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased font-sans selection:bg-[#8b5cf6] selection:text-white dark:selection:bg-[#00f0ff] dark:selection:text-[#0e1118]`}
       >
         <Providers
           attribute="class"
@@ -37,7 +37,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {" "}
-          <div className="min-h-screen bg-[#f2f2f2] dark:bg-[#232020] text-[#232020] dark:text-white">
+          <div className="min-h-screen bg-[#faf8ff] dark:bg-[#0e1118] text-[#180d2b] dark:text-white">
             <Navbar />
 
             <main className="animate-in fade-in duration-700">{children}</main>
