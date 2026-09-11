@@ -2,7 +2,7 @@
 
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { ExternalLink, Code2, Sparkles, ArrowUpRight } from "lucide-react";
+import { ExternalLink, Code2, Sparkles, ArrowUpRight, Play } from "lucide-react";
 import { PageHeading, AmbientPixelDecors } from "../pixel/PixelUI";
 import { TechIcon } from "../pixel/TechIcon";
 import { inventoryReveal } from "../pixel/variants";
@@ -110,8 +110,8 @@ function FeaturedProjectCard({ project }: { project: Project }) {
             </div>
 
             {/* Title */}
-            <h3 className="text-lg md:text-2xl font-pixel text-[#180d2b] dark:text-white group-hover:text-[#7c3aed] dark:group-hover:text-[#00f0ff] transition-colors uppercase tracking-tight flex items-center gap-2">
-              <span className="text-[#7c3aed] dark:text-[#00f0ff] shrink-0">▸</span>
+            <h3 className="text-lg md:text-2xl font-pixel text-[#180d2b] dark:text-white group-hover:text-[#7c3aed] dark:group-hover:text-[#00f0ff] transition-colors uppercase tracking-tight flex items-center gap-2.5">
+              <Play className="w-4 h-4 md:w-5 md:h-5 fill-current text-[#7c3aed] dark:text-[#00f0ff] shrink-0" />
               <span>{project.title}</span>
             </h3>
 
@@ -275,8 +275,8 @@ function StandardBentoCard({ project }: { project: Project }) {
         {/* Card Content & Action Bar (Always Visible - No Empty Feeling) */}
         <div className="p-5 md:p-6 flex flex-col flex-1 justify-between gap-4 bg-white dark:bg-[#151922]">
           <div>
-            <h4 className="text-xs md:text-sm font-pixel text-[#180d2b] dark:text-white group-hover:text-[#7c3aed] dark:group-hover:text-[#00f0ff] transition-colors uppercase tracking-tight flex items-center gap-1.5">
-              <span className="text-[#7c3aed] dark:text-[#00f0ff] shrink-0">▸</span>
+            <h4 className="text-xs md:text-sm font-pixel text-[#180d2b] dark:text-white group-hover:text-[#7c3aed] dark:group-hover:text-[#00f0ff] transition-colors uppercase tracking-tight flex items-center gap-2">
+              <Play className="w-3 h-3 md:w-3.5 md:h-3.5 fill-current text-[#7c3aed] dark:text-[#00f0ff] shrink-0" />
               <span>{project.title}</span>
             </h4>
 
