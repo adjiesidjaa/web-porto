@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export function Hero() {
   return (
-    <section className="px-6 max-w-4xl md:text-left">
+    <section className="w-full md:text-left">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -19,28 +19,28 @@ export function Hero() {
         className="flex flex-col items-start"
       >
         <div className="mb-8">
-          <h1 className="text-xl md:text-3xl font-['Press_Start_2P'] leading-relaxed text-[#232020] dark:text-white uppercase tracking-tighter">
-            Adjie <span className="text-[#c5a686]">M.</span> Usman
+          <h1 className="text-xl md:text-3xl font-['Press_Start_2P'] leading-relaxed text-[#180d2b] dark:text-white uppercase tracking-tighter">
+            Adjie <span className="text-[#7c3aed] dark:text-[#00f0ff]">M.</span> Usman
           </h1>
-          <p className="text-[10px] font-['Press_Start_2P'] text-[#c5a686] mt-6 tracking-widest opacity-80 uppercase">
-            /'ad-ji/ • /'jie/ • /'sid-ja/
+          <p className="text-[10px] font-['Press_Start_2P'] text-[#ec4899] dark:text-[#ff007f] mt-6 tracking-widest opacity-90 uppercase">
+            {"/'ad-ji/ • /'jie/ • /'sid-ja/"}
           </p>
         </div>
 
-        <div className="space-y-6 text-[9px] md:text-[11px] text-zinc-600 dark:text-zinc-400 max-w-2xl font-['Press_Start_2P'] leading-loose uppercase">
+        <div className="space-y-6 text-[9px] md:text-[11px] text-zinc-700 dark:text-zinc-300 max-w-2xl font-['Press_Start_2P'] leading-loose uppercase">
           <div className="flex items-start md:justify-start text-left">
-            <span className="text-[#c5a686] mr-2">■</span>
+            <span className="text-[#06b6d4] dark:text-[#00f0ff] mr-2">■</span>
             <div>
               <p>
                 an{" "}
-                <span className="text-[#232020] dark:text-[#c5a686]">
+                <span className="text-[#7c3aed] dark:text-[#00f0ff] font-bold">
                   Undergraduated Information Systems
                 </span>{" "}
                 student
               </p>
               <p>
                 at{" "}
-                <span className="underline decoration-[#c5a686] underline-offset-4">
+                <span className="underline decoration-[#ec4899] dark:decoration-[#ff007f] decoration-2 underline-offset-4 font-bold text-[#180d2b] dark:text-white">
                   Fasilkom UI
                 </span>
                 .
@@ -49,8 +49,8 @@ export function Hero() {
           </div>
           <div className="flex items-start md:justify-start text-left">
             <p>
-              <span className="text-[#c5a686] mr-2">■</span>a{" "}
-              <span className="text-[#232020] dark:text-[#c5a686]">
+              <span className="text-[#06b6d4] dark:text-[#00f0ff] mr-2">■</span>a{" "}
+              <span className="text-[#7c3aed] dark:text-[#00f0ff] font-bold">
                 Software Developer
               </span>
               .
