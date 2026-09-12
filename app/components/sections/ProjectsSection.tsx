@@ -89,9 +89,9 @@ function FeaturedProjectCard({ project }: { project: Project }) {
             />
 
             {/* Bottom Overlay Badge */}
-            <div className="absolute bottom-3 left-3 z-20 flex items-center gap-2 px-2.5 py-1 bg-[#180d2b]/90 dark:bg-[#0e1118]/90 border border-white/20 backdrop-blur-sm">
-              <span className="w-2 h-2 rounded-full bg-[#00f0ff] animate-ping" />
-              <span className="text-[9px] font-mono font-bold text-white uppercase tracking-wider">
+            <div className="absolute bottom-3 left-3 z-20 flex items-center gap-2 px-2.5 py-1 bg-white/95 dark:bg-[#0e1118]/95 border-2 border-[#7c3aed] dark:border-[#00f0ff] shadow-[2px_2px_0px_#ec4899] dark:shadow-[2px_2px_0px_#ff007f] backdrop-blur-sm">
+              <span className="w-2 h-2 rounded-full bg-[#ec4899] dark:bg-[#00f0ff] animate-ping" />
+              <span className="text-[9px] font-mono font-bold text-[#180d2b] dark:text-[#00f0ff] uppercase tracking-wider">
                 DISTRIBUTED TICKETING SYSTEM
               </span>
             </div>
@@ -119,24 +119,6 @@ function FeaturedProjectCard({ project }: { project: Project }) {
             <p className="text-xs md:text-sm font-sans text-zinc-700 dark:text-zinc-200 leading-relaxed">
               {project.desc}
             </p>
-
-            {/* Architecture Highlights */}
-            <div className="pt-2">
-              <span className="block text-[9px] font-mono text-zinc-400 dark:text-zinc-500 uppercase mb-1.5">
-                {"// KEY CAPABILITIES:"}
-              </span>
-              <div className="flex flex-wrap gap-1.5 md:gap-2">
-                <span className="px-2 py-0.5 text-[9px] md:text-[10px] font-mono font-semibold bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800">
-                  ⚡ REAL-TIME SEATS
-                </span>
-                <span className="px-2 py-0.5 text-[9px] md:text-[10px] font-mono font-semibold bg-cyan-50 dark:bg-cyan-950/60 text-cyan-700 dark:text-cyan-300 border border-cyan-300 dark:border-cyan-800">
-                  ⚡ CONCURRENCY LOCK
-                </span>
-                <span className="px-2 py-0.5 text-[9px] md:text-[10px] font-mono font-semibold bg-purple-50 dark:bg-purple-950/60 text-purple-700 dark:text-purple-300 border border-purple-300 dark:border-purple-800">
-                  ⚡ MESSAGE QUEUE
-                </span>
-              </div>
-            </div>
           </div>
 
           {/* Bottom: Tech Stack & Action Button */}

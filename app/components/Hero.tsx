@@ -18,18 +18,18 @@ export function Hero() {
         }}
         className="flex flex-col items-start"
       >
-        <div className="mb-8">
-          <h1 className="text-xl md:text-3xl font-['Press_Start_2P'] leading-relaxed text-[#180d2b] dark:text-white uppercase tracking-tighter">
+        <div className="mb-6 md:mb-8">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-['Press_Start_2P'] leading-normal md:leading-relaxed text-[#180d2b] dark:text-white uppercase tracking-tight">
             Adjie <span className="text-[#7c3aed] dark:text-[#00f0ff]">M.</span> Usman
           </h1>
-          <p className="text-[10px] font-['Press_Start_2P'] text-[#ec4899] dark:text-[#ff007f] mt-6 tracking-widest opacity-90 uppercase">
+          <p className="text-[10px] md:text-xs font-['Press_Start_2P'] text-[#ec4899] dark:text-[#ff007f] mt-4 md:mt-5 tracking-widest opacity-90 uppercase">
             {"/'ad-ji/ • /'jie/ • /'sid-ja/"}
           </p>
         </div>
 
-        <div className="space-y-6 text-[9px] md:text-[11px] text-zinc-700 dark:text-zinc-300 max-w-2xl font-['Press_Start_2P'] leading-loose uppercase">
+        <div className="space-y-5 md:space-y-6 text-[10px] md:text-xs text-zinc-700 dark:text-zinc-300 max-w-xl font-['Press_Start_2P'] leading-loose uppercase">
           <div className="flex items-start md:justify-start text-left">
-            <span className="text-[#06b6d4] dark:text-[#00f0ff] mr-2">■</span>
+            <span className="text-[#06b6d4] dark:text-[#00f0ff] mr-2 mt-0.5">■</span>
             <div>
               <p>
                 an{" "}
@@ -49,7 +49,7 @@ export function Hero() {
           </div>
           <div className="flex items-start md:justify-start text-left">
             <p>
-              <span className="text-[#06b6d4] dark:text-[#00f0ff] mr-2">■</span>a{" "}
+              <span className="text-[#06b6d4] dark:text-[#00f0ff] mr-2 mt-0.5">■</span>a{" "}
               <span className="text-[#7c3aed] dark:text-[#00f0ff] font-bold">
                 Software Developer
               </span>
